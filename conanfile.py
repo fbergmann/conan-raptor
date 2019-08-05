@@ -80,7 +80,7 @@ conan_basic_setup()''')
         libfile = "raptor"
 
         if not self.settings.os == "Windows":
-            libfile += "lib" + libfile + ".a"
+            libfile = "lib" + libfile + ".a"
         else:
             libfile += ".lib"
 
